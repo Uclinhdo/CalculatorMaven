@@ -46,11 +46,13 @@ public class calculator extends HttpServlet {
            Double area = cal.getRectangleArea(length, width);
            
            request.setAttribute("resMsg", area);
+           RequestDispatcher view = request.getRequestDispatcher(ALIAS_PAGE);
+           view.forward(request, response);
            
         }catch(Exception ex){
             request.setAttribute("errorMsg", ex.getMessage());
             RequestDispatcher view = request.getRequestDispatcher(ALIAS_PAGE);
-           view.forward(request, response);
+            view.forward(request, response);
         }
       }else if(calcType.equals("circle")){
           try{
@@ -58,6 +60,8 @@ public class calculator extends HttpServlet {
               CalculatorService cirCal = new CalculatorService();
               Double cirArea = cirCal.getCircleArea(radius);
               request.setAttribute("resMsg", cirArea);
+              RequestDispatcher view = request.getRequestDispatcher(ALIAS_PAGE);
+              view.forward(request, response);
               
           }catch(Exception ex){
               request.setAttribute("errorMsg", ex.getMessage());
@@ -71,6 +75,8 @@ public class calculator extends HttpServlet {
               CalculatorService triCal = new CalculatorService();
               Double triArea = triCal.getTriangle(sideA, sideB);
               request.setAttribute("resMsg", triArea);
+              RequestDispatcher view = request.getRequestDispatcher(ALIAS_PAGE);
+              view.forward(request, response);
           }catch(Exception ex){
               request.setAttribute("errorMsg", ex.getMessage());
                RequestDispatcher view = request.getRequestDispatcher(ALIAS_PAGE);

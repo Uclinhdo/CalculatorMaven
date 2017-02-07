@@ -8,3 +8,15 @@ and open the template in the editor.
     Author     : linhdo
 */
 
+.title1{
+    color:#F2DDF3;
+    text-align:center;
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size:x-large;
+    font-style:italic;
+    font-weight: bold;
+    border:hidden; 
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius:200px;
+    background-color:#4A38BD;
+}

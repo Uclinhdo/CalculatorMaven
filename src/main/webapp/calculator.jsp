@@ -84,7 +84,7 @@
                         </div>
 		</div>
                 <div class="tab-pane" id="3a">
-                    <h3>Unknown Side of Right Triangle</h3>
+                    <h3>Unknown Side of Right Triangle Calculator</h3>
                         <div class="row">
                          <div class="col-sm-10">
                              <p><img src="img/triangle.png" alt=""></p>
