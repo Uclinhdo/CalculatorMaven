@@ -60,6 +60,11 @@
 		<div class="tab-pane" id="2a">
                     <h3>Circle Calculator</h3>
                         <div class="row">
+                         <div class="col-sm-10">
+                             <p><img src="img/circle.png" alt=""></p>
+                         </div>
+                     </div>
+                        <div class="row">
                             <div class="col-sm-10">
                             <form id="circle" name="circle" method="POST" action="calculator?CalcType=circle">
                                 <div class="form-group row">
@@ -80,6 +85,11 @@
 		</div>
                 <div class="tab-pane" id="3a">
                     <h3>Unknown Side of Right Triangle</h3>
+                        <div class="row">
+                         <div class="col-sm-10">
+                             <p><img src="img/triangle.png" alt=""></p>
+                         </div>
+                     </div>
                         <div class="row">
                             <div class="col-sm-10">
                             <form id="triangle" name="triangle" method="POST" action="calculator?CalcType=triangle">
@@ -104,6 +114,11 @@
 		</div>
                 <div class="tab-pane" id="4a">
                      <h3 class="title">Rectangle Calculator</h3>
+                     <div class="row">
+                         <div class="col-sm-10">
+                             <p><img src="img/rectangle.png" alt=""></p>
+                         </div>
+                     </div>
                           <div class="row">
                             <div class="col-sm-10">
                             <form id="rectangle" name="rectangle" method="POST" action="calculator?CalcType=rectangle">
