@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculator Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!--<div class="line"><marquee behavior= "scroll"><img src="welcome_icon-0.png" alt=""> Welcome To Message Service!!!
+                    <img src="welcome_icon-0.png" alt="">Hi, This is Linh Do, Customer Service Dept.<img src="welcome_icon-0.png" alt="">
+                    Contact me for help at anytime(000-000-0000)<img src="welcome_icon-0.png" alt="">
+                </marquee></div>-->
+            <h1 class="title"> Rectangle Calculator </h1>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-3 col-xs-12">
+                    <form id="myForm" name="calForm" method="POST" action="calculator">
+                        <div class="form-group row">
+                            <div><label>Enter length:</label></div>
+                            <div class="col-md-4"><input type="number" name="length" value="" placeholder="Please Enter Length" class="form-control"/></div>
+
+                        </div>
+                         <div class="form-group row">
+                            <div><label>Enter width:</label></div>
+                            <div class="col-md-4"><input type="number" name="width" value="" placeholder="Please Enter Width" class="form-control"/></div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Get Area!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row text">
+                <div class="col-sm-8 col-sm-offset-3 col-xs-12">
+                     <h1>The rectangle area is: ${resMsg}</h1>
+                </div>
+               
+            </div>
+        </div>
+    </body>
+</html>
